@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Who want to be a Million</title>
+	<!-- Bootstrap -->
+	<!-- Link to the Bootstrap CSS using a Content Distribution Network (CDN) -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<!-- Link to your custom styles, then open the CSS file in your code editor to add padding or margin to the MAIN element -->
+	<link href="css/custom.css?v=3.5" rel="stylesheet" >
+	<!-- Add more icon fonts - try FontAwesome - link to the CDN -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+	<!--Using Vue library-->
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.11/lodash.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<header>
+		<h1>WHO WANTS TO BE A MILIONAIRE</h1>
+	</header>
+
+	<main>
+		<section id="app">
+			<div >
+				<div class="fadeback" v-if="index >=level">
+					<img class="millLogo float-center mt-5" src="img/Milionerzy.png">
+					<h1 class="text-white mt-3">
+						{{messageGame}}
+					</h1>
+
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div id="colmix" class="col-12 col-sm-8 col-md-8 col-lg-8" >
+
+						<div class="row" v-if="playPressed == true">
+							<div id="colleft" class="col-12 col-sm-3 col-md-4 col-lg-4">
+								<div class="left">
+									<a href="" target="_blank" title="Click to view website" ><img src="img/Milionerzy.png" class="img-logo" alt="website" width="200"/></a>
+									<h2 >LIFE LINES <br />
+										<button @click="fiftyHelp" v-bind:disabled="fiftyPressed === true" class="Classic5050"></button>
+										<a href="" target="_blank" title="Click to call"><img src="img/png-millionaire-classicpaf-png-100x78.png" class="img-linknetwork" alt="call" /></a>
+										<br />
+										<button @click="AskAudience" class="Ask-Audience" :class="{'Ask-Audience-used' : (useAskAudience===true)}"></button>
+									</h2>
+								</div>
+							</div>
+							<div class="col-12 col-sm-5 col-md-5 col-lg-5"></div>
+						</div>
+
+						<div class="row" v-if="playPressed == true">
+							<div class="row question">
+
+								<div class="question_bg" >
+								{{unescapedQ()}}
+								</div>
+							</div>
+
+							<div class="row question">
+								<div class="col-12 col-sm-6 col-md-6 col-lg-6">
+									<button id="a" v-bind:data-picked="AnswersA()" @click="AnswerSubmit" data-key1="65" data-key2="97" class="answer_bg">A: {{AnswersA()}}</button>
+
+								</div>
+								<div class="col-12 col-sm-6 col-md-6 col-lg-6">
+									<button id="b" v-bind:data-picked="AnswersB()" @click="AnswerSubmit" data-key1="66" data-key2="98" class="answer_bg">B: {{AnswersB()}}</button>
+								</div>
+							</div>
+
+							<div class="row question">
+								<div class="col-12 col-sm-6 col-md-6 col-lg-6">
+									<button id="c" v-bind:data-picked="AnswersC()" @click="AnswerSubmit" data-key1="67" data-key2="99" :class="{'hidden' : (AnswersC()=='') }" class="answer_bg">C: {{AnswersC()}}</button>
+								</div>
+								<div class="col-12 col-sm-6 col-md-6 col-lg-6">
+									<button id="d" v-bind:data-picked="AnswersD()" @click="AnswerSubmit" data-key1="68" data-key2="100" :class="{'hidden' : (AnswersD()=='') }" class="answer_bg">D: {{AnswersD()}}</button>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+
+
+
+					<div class="col-12 col-sm4 col-md-4 col-lg-4">
+
+						<div class="row">
+							<div id="right">
+								<h2>PROGRESSIVE JACKPOT</h2>
+								<p v-for="(item,i) in reverseQs" :key="item" v-bind:class="{'money' : item.level<(index+1), 'current_bg': item.level==(index+1), 'more_money': item.level>(index+1)}">{{item.level}}<span>${{item.amount}}</span></p>
+							</div>
+						</div>
+
+						<div class="clearfix" v-if="playPressed == false">
+							<button type="button" class="play" @click="playGame" v-bind:disabled="playPressed === true">PLAY</button>
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="row"></div>
+
+		</section>
+	</main>
+
+		<!-- Attach the supporting JavaScript Libraries -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+		<script src="js/custom.js"></script>
+
+		<script src="js/app.js"></script>
+	</body>
+</html>

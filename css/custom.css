@@ -1,0 +1,364 @@
+￼/* Custom CSS */
+
+html {
+	background-color: #2b2121;
+
+}
+
+body {
+  font: 100%/1.25 Helvetica, Arial, sans-serif;
+  color: #333;
+  width:100%;
+  background-color: #02352e;
+  background-image: url("../img/Milion_Background_1400x875.jpg");
+  align-items: center;
+}
+
+.container {
+  margin-top :50px;
+  width: 100%;
+}
+
+div.container {
+margin-top: 2%;
+}
+
+/**************** HEADER ****************/
+/** A format as background-color, border, width, position,font-size,.. in header **/
+header {
+  background-color: rgba(0, 0, 0, 0.9);
+  width: 100%;
+  font-size: 1em;
+  font-family: oswald;
+}
+
+.btn.btn-outline-secondary {
+  background-color: #333;
+  border-color: #cc9933;
+}
+
+/**************  THE DISCRIPTION PRODUCTS FORMAT  **************/
+/** H1,p  format as font family, font size, color, padding in disscription product **/
+h1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 3em;
+  color: yellow;
+  text-align: center;
+  padding-left: 1.5%;
+  font-weight: bolder;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+p  {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1em;
+  color:#2b2121;
+  text-align: center;
+  padding-left: 1.5%;
+}
+
+p.more_money  {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1em;
+  color:white;
+  text-align: left;
+  padding-left: 7%;
+  font-weight: bolder;
+  background-image: url("../img/arrow_20x23.png");
+  background-repeat: no-repeat;
+  margin-left: 10%;  
+}
+
+p.more_money > span {
+  float: right;
+  padding-right:30%;
+  font-weight: bolder;
+
+}
+p.money  {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1em;
+  color: #ff9900;
+  text-align: left;
+  padding-left: 7%;
+  font-weight: bolder;
+  background-image: url("../img/arrow_20x11_y.png");
+  background-repeat: no-repeat;
+  margin-left: 10%;   
+  background-position: left;
+}
+p.money > span {
+  float: right;
+  padding-right: 18%;
+  font-weight: bolder;
+}
+
+p.current_bg{
+    background: transparent url(../img/backright_266x30.png) no-repeat;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;	
+	border: none;
+    color: #fff;
+	height: 30px; 
+	
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1em;    
+    text-align: left;
+    padding-left: 7%;
+    font-weight: bolder;
+    margin-left: 10%;
+    background-position: left;	
+	padding-top: 4px;	
+}
+p.current_bg> span {
+  float: right;
+  padding-right: 17%;
+  font-weight: bolder;
+}
+
+p sub{
+	margin-right: 5%;
+}
+img#highlevel7, #highlevel8, #highlevel9, #highlevel10, #highlevel11, #highlevel12, #highlevel13, #highlevel14, #highlevel15 {
+  margin-right: 5%;
+}
+#level, #level1, #level2, #level3, #level4, #level5, #level6 {
+  color: #ff9900;
+  margin-right: 5%;
+}
+
+
+/* Set a style for all buttons */
+button {
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  width: 150px;
+}
+
+button:hover {
+  opacity:0.9;
+}
+
+
+button.play {
+  padding: 2% 2%;
+  width: 90%;
+  margin-left: 5%;
+  margin-bottom: 10%;
+  border: linear-gradient(to right, #fff, #BFBDBD, #AFAFAF, #BFBDBD, #fff) 50px;
+  font-size: 2.5em;
+  background: linear-gradient(to bottom, #fff, #BFBDBD, #AFAFAF, #BFBDBD, #fff);
+  border-radius: 5px; 
+  border: 10% linear-gradient(to right, #fff, #BFBDBD, #AFAFAF, #BFBDBD, #fff);
+
+}
+
+div#colleft {
+  background-color: white;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 2em;
+  margin-bottom: 0.5%;
+  opacity: 0.8;
+  padding-left: 2%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+#colleft h2 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1em;
+  color: black;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  padding-left: 5%;
+}
+#colleft p {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.2em;
+  color: white;
+  text-align: right;
+  padding-top: 1%;
+}
+#col1 {
+  padding-bottom: 1%;
+}
+#col2 {
+  padding-top:1%;
+  padding-bottom: 1%;
+}
+#colleft2 {
+  padding-bottom: 1%;
+  padding-top: 2%;
+}
+/***** QUESTION*******/
+/** Question, answer  format as font family, font size, color, padding in disscription product **/
+.question_bg {
+  width:100%;
+    height:100%;	
+
+padding-top: 2%;
+padding-bottom: 2%;
+background-image: url(../img/backbig_542x48.png);
+text-align: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+color: #fff;	
+}
+
+.answer_bg  {
+  
+  padding-top: 2%;
+  padding-bottom: 2%;
+    background: transparent url(../img/backright_266x30_blue.png) no-repeat;
+text-align: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+color: #fff;  
+border: none;
+  width:100%;
+    height:100%;
+}
+
+
+.row.question{
+width: 100%;left: 0;right: 0;margin-left: 0;margin-right: 0;
+}
+.Classic5050{
+
+    background: transparent url(../img/Classic5050_100x77.png) no-repeat;
+    border: none;
+    background-position: center center;
+    background-repeat: no-repeat;    
+color: #fff;	
+    height: 80px;
+padding-left: 78%;	
+}
+
+div.row {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: 0.5%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+#right {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: 0.5%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  margin-right: 0;
+  width: 100%;
+  border: 10px solid white;
+  background: linear-gradient(to top, #010039, #0000cc, #010039);
+}
+
+#right h2 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.5em;
+  color:yellow;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  text-align: center;
+}
+
+h2 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding-left: 1%;
+  padding-top: 1%;
+}
+img.img-logo{
+  width: 100%;
+  }
+img.img-linknetwork {
+  padding-left: 22%;
+  padding-bottom: 1%;
+  padding-top: 1%;
+}
+#sendMessageButton {
+  background-color: #02352e;
+  border-color: #014f3f;
+  color:white;
+}
+#sendMessageButton:hover {
+  background-color:#02352e;
+  border-color: #014f3f;
+  color:#014f3f;
+}
+
+
+/** Class top format as float right and margin auto when user click to this button the website will go to the top of page  **/
+.top {
+    float: right;
+    margin: auto;
+}
+
+/* View the result in the browser, then head back to index.html */
+/* The below class and animation keyframes are used by the JavaScript */
+.zoomit {
+	animation: zoom-in-out .5s;
+}
+@keyframes zoom-in-out {
+	from {
+		transform: none;
+	}
+	50% {
+		transform: scale(1.4);
+		transform-origin: center top;
+	}
+	to {
+		transform: none;
+	}
+}
+
+.fadeback {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #117a8bc4;
+	z-index:9999;
+}
+.text-center{
+	position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 30em;
+    height: 18em;
+    margin-top: -20em;
+    margin-left: -15em;
+}
+.millLogo{
+	max-width: 400px;
+    min-width: 180px;
+    width: 100%;	
+}
+
+.Ask-Audience{
+    background: transparent url(../img/phone-a-friend_100x77.png) no-repeat;
+    border: none;
+    background-position: center center;
+    background-repeat: no-repeat;    
+color: #fff;	
+    height: 80px;
+padding-left: 78%;		
+}
+.Ask-Audience-used{
+    background: transparent url(../img/ClassicATAused_100x77.png) no-repeat;
+background-position: center center;	
+}

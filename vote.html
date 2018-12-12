@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        body {
+            background-image: url("https://onwardigo.files.wordpress.com/2016/05/millionaire01.jpg");
+            background-color: #000;
+        }
+        section {
+            display: flex;
+            justify-content: center;
+            align-content: stretch;
+        }
+
+        button {
+            margin: 100px;
+            width: 300px;
+            height: 200px;
+            font-size: 40px;
+            border: 3px solid skyblue;
+            transition: all 0.2s;
+        }
+
+        button:hover {
+            background-color: yellow;
+            transform: scale(1.1);
+        }
+
+        </style>
+    </head>
+    <body>
+        <section>
+            <form action="http://aws.computerstudi.es/~gcc200381290/Javascript Comp2112/vote.php" method="POST">
+                <input type="hidden" name="vote" value="a">
+                <button id="a">A</button>
+            </form>
+
+            <form action="http://aws.computerstudi.es/~gcc200381290/Javascript Comp2112/vote.php" method="POST">
+                <input type="hidden" name="vote" value="b">
+                <button id="b">B</button>
+            </form>
+        </section>
+
+        <br>
+
+        <section>
+            <form action="http://aws.computerstudi.es/~gcc200381290/Javascript Comp2112/vote.php" method="POST">
+                <input type="hidden" name="vote" value="c">
+                <button id="c">C</button>
+            </form>
+
+            <form action="http://aws.computerstudi.es/~gcc200381290/Javascript Comp2112/vote.php" method="POST">
+                <input type="hidden" name="vote" value="d">
+                <button id="d">D</button>
+            </form>
+        </section>
+    </body>
+</html>
