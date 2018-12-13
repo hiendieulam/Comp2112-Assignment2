@@ -13,12 +13,12 @@
 
 - Click 50:50 :
 
-  - You will be given 50:50. The game will eliminate half of the answers. But that is the wrong answer. The remaining questions will have a correct answer and a wrong answer.
+  - You will be given 50:50. The game will eliminate half of the answers, but that is the wrong answer. The remaining questions will have a correct answer and a wrong answer.
 
 - Vote (Participants voted in the studio):
 
   - They choose on the website values such as: A, B, C, D.
-  - The game will list the value A, B, C, D on the chart.
+  - The game will list how many people click the A, B, C, D value, and it will be displayed on the chart.
 
 - Bonus:
 
@@ -26,7 +26,7 @@
 
 - Background music:
 
-  - Background music when you click play button
+  - Background music when you click play button to start game.
   
 
  My Link: 
